@@ -1,0 +1,72 @@
+[
+	{
+		"model": "LegacySite.product",
+		"pk": 1,
+		"fields": {
+		    "product_name": "NYU Apparel Card",
+		    "product_image_path": "/images/product_1.jpg",
+		    "recommended_price": 95,
+		    "description": "Use this card to buy NYU Clothing!"
+		}
+	},
+	{
+		"model": "LegacySite.product",
+		"pk": 2,
+		"fields": {
+		    "product_name": "Tandon Food Court Card",
+		    "product_image_path": "/images/product_2.jpg",
+		    "recommended_price": 30,
+		    "description": "Use this card to buy food at the Tandon Food Court!"
+		}
+	},
+	{
+		"model": "LegacySite.product",
+		"pk": 3,
+		"fields": {
+		    "product_name": "Graduation Robe Card",
+		    "product_image_path": "/images/product_3.jpg",
+		    "recommended_price": 199,
+		    "description": "Why worry about this later? Buy this card to make graduation easier!"
+		}
+	},
+	{
+		"model": "LegacySite.product",
+		"pk": 4,
+		"fields": {
+		    "product_name": "Semester's Book Card",
+		    "product_image_path": "/images/product_5.jpg",
+		    "recommended_price": 777,
+		    "description": "So much to read, so little time. Buy this to make payment at the book store quicker and easier!"
+		}
+	},
+	{
+		"model": "LegacySite.product",
+		"pk": 5,
+		"fields": {
+		    "product_name": "NYU Electronics Card",
+		    "product_image_path": "/images/product_6.jpg",
+		    "recommended_price": 500,
+		    "description": "Need a new laptop? No problem! This card can be used to buy electronics at the NYU Bookstore."
+		}
+	},
+	{
+		"model": "LegacySite.product",
+		"pk": 6,
+		"fields": {
+		    "product_name": "Tuition Card",
+		    "product_image_path": "/images/product_7.jpg",
+		    "recommended_price": 1999,
+		    "description": "Need to pay for those credits? Pick up this card to make the process easier!"
+		}
+	},
+	{
+		"model": "LegacySite.product",
+		"pk": 7,
+		"fields": {
+		    "product_name": "NYU Gym Card",
+		    "product_image_path": "/images/product_8.jpg",
+		    "recommended_price": 450,
+		    "description": "Want summer gym access for your entire degree? This card should cover it!"
+		}
+	}
+]

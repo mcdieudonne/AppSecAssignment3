@@ -1,0 +1,36 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: assignment3-django-migrations
+spec:
+  template:
+    spec:
+      containers:
+        - name: assignment3-django-migrations
+          image: nyuappsec/assign3:v0
+          command: ["/bin/sh", "-c"]
+          args: ["python3 manage.py makemigrations LegacySite; python3 manage.py migrate"]
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                    name: my-secrets
+                    key: mysql_root_password
+                    
+            - name: MYSQL_DB
+              value: GiftcardSiteDB
+
+            - name: MYSQL_HOST
+              value: mysql-service
+
+            - name: ALLOWED_HOSTS
+              value: "*,"
+              
+            - name: SECRET_KEY            
+              valueFrom:
+                secretKeyRef:
+                  name: my-secrets     
+                  key: django_secret_key
+                  
+      restartPolicy: Never
+  backoffLimit: 1
